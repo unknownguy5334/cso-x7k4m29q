@@ -1,0 +1,8 @@
+{
+  "name": "Register",
+  "description": "A refined course schedule optimizer that finds every combination with zero time conflicts and minimum waiting time between classes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

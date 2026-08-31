@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FFFFFF;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F9F9F8;
+    --bg-muted: #F3F3F1;
+    --text-primary: #000000;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #767676;
+    --border-hairline: #E5E5E5;
+    --border-subtle: #EDEDEB;
+    --accent: #000000;
+    --accent-hover: #222222;
+    --accent-muted: rgba(0, 0, 0, 0.05);
+    --gold: #9E7D3B;
+    --error: #A82020;
+  }
+
+  /* Force white-only layout */
+  html, body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-serif, .font-serif-display {
+    font-family: 'Cormorant Garamond', 'Newsreader', 'Cinzel', Georgia, serif;
+    font-feature-settings: "pnum" 1, "onum" 1;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  .font-luxury-brand {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    letter-spacing: 0.12em;
+  }
+
+  .font-luxury-display {
+    font-family: 'Cormorant Garamond', 'Newsreader', Georgia, serif;
+    letter-spacing: -0.025em;
+  }
+
+  code, kbd, samp, pre, .font-mono-code {
+    font-family: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+
